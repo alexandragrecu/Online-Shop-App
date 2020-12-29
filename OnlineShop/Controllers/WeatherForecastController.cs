@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace OnlineShop.Controllers
-{
+{ // initial commit
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
