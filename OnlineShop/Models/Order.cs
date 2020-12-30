@@ -11,7 +11,7 @@ namespace OnlineShop.Models
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
         [MaxLength(200)]
-        public int Name { get; set; }
+        public string Name { get; set; }
         [MaxLength(200)]
         public int OrderNumber { get; set; }   
     }

@@ -210,6 +210,7 @@ namespace OnlineShop.DAL
 
         public static bool AddOrder(Order order)
         {
+            Console.WriteLine(order);
             using (SQLiteConnection conn = new SQLiteConnection(connString))
             {
                 try
