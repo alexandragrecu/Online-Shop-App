@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OnlineShop.DAL;
 using OnlineShop.Models;
+using OnlineShop.Services;
 
 namespace OnlineShop.Controllers
 {
@@ -34,6 +35,7 @@ namespace OnlineShop.Controllers
             return Ok(DBServices.GetProducts());
         }
 
+        [IsAuthorized]
         [HttpPost("/addProduct")]
         public IActionResult AddProduct([FromBody] Product product)
         {

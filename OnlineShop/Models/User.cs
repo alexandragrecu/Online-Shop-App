@@ -8,6 +8,11 @@ namespace OnlineShop.Models
 {
     public class User
     {
+        public User()
+        {
+            role = "user";
+        }
+
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
         [MaxLength(50)]
@@ -17,5 +22,6 @@ namespace OnlineShop.Models
         [MaxLength(70)]
         public string email { get; set; }
         public string password { get; set; }
-    }
+        public string role { get; set; }
+}
 }
