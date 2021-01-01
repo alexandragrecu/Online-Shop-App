@@ -11,6 +11,7 @@ namespace OnlineShop.Models
         public User()
         {
             role = "user";
+            orderId = 0;
         }
 
         [PrimaryKey, AutoIncrement]
@@ -23,5 +24,6 @@ namespace OnlineShop.Models
         public string email { get; set; }
         public string password { get; set; }
         public string role { get; set; }
+        public int orderId { get; set; }
 }
 }
